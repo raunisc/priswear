@@ -1,0 +1,194 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pris Wear - Moda Feminina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hamburgers@1.2.1/dist/hamburgers.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text">Pris Wear</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://exemplo.com/colecao">Nova Coleção</a></li>
+                <li><a href="https://exemplo.com/categorias">Categorias</a></li>
+                <li><a href="https://exemplo.com/sobre">Sobre</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger hamburger--spin mobile-menu-toggle" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <div class="search-container">
+            <input type="text" id="product-search" placeholder="Pesquisar produtos...">
+            <button id="search-button">
+                <i data-feather="search"></i>
+            </button>
+        </div>
+        <div class="header-icons">
+            <i data-feather="shopping-bag" class="header-icon"></i>
+            <i data-feather="user" class="header-icon"></i>
+        </div>
+    </header>
+    <div class="mobile-nav">
+        <div class="mobile-nav-content">
+            <button class="mobile-nav-close" aria-label="Fechar menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            
+            <div class="search-container-mobile">
+                <input type="text" id="product-search-mobile" placeholder="Pesquisar produtos...">
+                <button id="search-button-mobile">
+                    <i data-feather="search"></i>
+                </button>
+            </div>
+            <ul>
+                <li><a href="https://exemplo.com/colecao">Nova Coleção</a></li>
+                <li><a href="https://exemplo.com/categorias">Categorias</a></li>
+                <li><a href="https://exemplo.com/sobre">Sobre</a></li>
+            </ul>
+            <div class="mobile-nav-icons">
+                <i data-feather="shopping-bag" class="header-icon"></i>
+                <i data-feather="user" class="header-icon"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+        <section id="search-results-container" class="search-results"></section>
+        <!-- <section class="hero">
+            <div class="hero-content">
+                <h2>Elegância em Cada Detalhe</h2>
+                <p>Descubra peças exclusivas que revelam sua personalidade única, com modelos que contam histórias</p>
+                <a href="https://exemplo.com/colecao" class="cta-button">Descobrir Coleção</a>
+            </div>
+        </section> -->
+
+        
+
+        <!-- <section class="category-highlights">
+            <h3>Nossas Coleções</h3>
+            <div class="category-grid">
+                <div class="category-card" data-category="feminino">
+                    <img src="categoria-feminino.jpg" alt="Moda Feminina">
+                    <div class="category-overlay">
+                        <h4>Moda Feminina</h4>
+                        <a href="https://exemplo.com/feminino" class="category-link">Explorar</a>
+                    </div>
+                </div>
+                <div class="category-card" data-category="plus-size">
+                    <img src="categoria-plus-size.jpg" alt="Plus Size">
+                    <div class="category-overlay">
+                        <h4>Plus Size</h4>
+                        <a href="https://exemplo.com/plus-size" class="category-link">Explorar</a>
+                    </div>
+                </div>
+                <div class="category-card" data-category="bone">
+                    <img src="categoria-bone.jpg" alt="Bonés e Chapéus">
+                    <div class="category-overlay">
+                        <h4>Bonés & Chapéus</h4>
+                        <a href="https://exemplo.com/bone" class="category-link">Explorar</a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="product-highlights">
+            <h3>Destaque Moda Feminina</h3>
+            <div class="product-slider">
+                <div class="swiper product-swiper-feminino">
+                    <div class="swiper-wrapper" id="product-wrapper-feminino">
+                        <!-- Feminino products will be dynamically loaded here -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-feather="truck"></i>
+                    </div>
+                    <h4>Entrega Expressa</h4>
+                    <p>Envio rápido e seguro para todo o Brasil</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-feather="credit-card"></i>
+                    </div>
+                    <h4>Pagamento Flexível</h4>
+                    <p>Parcele em até 6x sem juros</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-feather="shield"></i>
+                    </div>
+                    <h4>Compra Protegida</h4>
+                    <p>Sua privacidade e segurança garantidas</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h3>Fique na Moda</h3>
+                <p>Assine nossa newsletter e tenha acesso a lançamentos exclusivos</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu e-mail" required>
+                    <button type="submit">Receber Novidades</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="https://exemplo.com/sobre">Sobre Nós</a></li>
+                    <li><a href="https://exemplo.com/contato">Contato</a></li>
+                    <li><a href="https://exemplo.com/politica-privacidade">Política de Privacidade</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-media">
+                <h4>Siga-nos</h4>
+                <div class="social-icons">
+                    <a href="https://instagram.com/priswear" target="_blank"><i data-feather="instagram"></i></a>
+                    <a href="https://facebook.com/priswear" target="_blank"><i data-feather="facebook"></i></a>
+                    <a href="https://twitter.com/priswear" target="_blank"><i data-feather="twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            2025 Pris Wear. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+    
+</body>
+</html>
