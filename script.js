@@ -12,28 +12,28 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 1,
             name: 'Camiseta Verde',
             price: 'R$ 299,90',
-            image: 'img/camiseta-verde.jpg',
+            image: 'camiseta-verde.jpg',
             category: 'Feminino'
         },
         {
             id: 2,
             name: 'Blazer Alfaiataria Elegante',
             price: 'R$ 449,90',
-            image: 'img/saida-rosa.jpg',
+            image: 'saida-rosa.jpg',
             category: 'Feminino'
         },
         {
             id: 5,
             name: 'Conjunto Casual Confort',
             price: 'R$ 279,90',
-            image: 'img/conjunto-vermelho.jpg',
+            image: 'conjunto-vermelho.jpg',
             category: 'Feminino'
         },
         {
             id: 4,
             name: 'Conjunto Black',
             price: 'R$ 349,90',
-            image: 'img/conjunto-black.jpg',
+            image: 'conjunto-black.jpg',
             category: 'Feminino'
         }
     ];
