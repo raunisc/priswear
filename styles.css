@@ -1,11 +1,12 @@
 :root {
     /* Yellow Color Palette */
     --primary-color: #FFF7E0;        /* Soft, warm cream base */
-    --secondary-color: #ffd504;      /* Golden yellow */
+    --secondary-color: #78866b;      /* Golden yellow */
     --accent-color: #FFA500;         /* Orange-yellow accent */
     --light-color: #FFFAF0;          /* Lightest cream */
     --text-color: #4A3C2A;           /* Deep, warm brown for text */
     --category-overlay-bg: rgba(255, 215, 0, 0.85);  /* Transparent golden yellow */
+    --black: black;
 }
 
 * {
@@ -17,7 +18,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: var(--text-color);
+    color: var(--black);
     background-color: var(--light-color);
     padding-top: 120px;
 }
@@ -41,7 +42,7 @@ h2, h3, h4 {
     display: inline-block;
     font-family: "Dancing Script", serif;
     font-size: 2rem;
-    color: rgb(190, 12, 42);
+    color: var(--black);
     font-weight: bold;
     letter-spacing: 1px;
     transition: color 0.3s ease;
@@ -107,7 +108,7 @@ nav ul li:hover {
 }
 
 nav ul li a {
-    color: var(--text-color);
+    color: var(--black);
     text-decoration: none;
     font-weight: 500;
     position: relative;
@@ -131,7 +132,7 @@ nav ul li a:hover {
 }
 
 header.shrink nav ul li a {
-    color: var(--text-color);  /* Revert to original color */
+    color: var(--black);  /* Revert to original color */
     opacity: 1;  /* Full opacity */
     transition: opacity 0.3s ease, color 0.3s ease;
 }
@@ -163,7 +164,7 @@ nav ul li a:hover::before {
 }
 
 .header-icon {
-    color: var(--text-color);
+    color: var(--black);
     cursor: pointer;
     transition: color 0.3s ease;
 }
@@ -243,7 +244,7 @@ nav ul li a:hover::before {
 #search-results-container h3 {
     text-align: center;
     margin-bottom: 30px;
-    color: var(--secondary-color);
+    color: var(--black);
 }
 
 #search-results-container .search-results-grid {
@@ -379,7 +380,7 @@ nav ul li a:hover::before {
 .product-highlights h3 {
     font-size: 42px;
     margin-bottom: 50px;
-    color: var(--secondary-color);
+    color: var(--black);
 }
 
 .product-slider {
@@ -428,7 +429,7 @@ nav ul li a:hover::before {
 }
 
 .product-details h4 {
-    color: var(--secondary-color);
+    color: var(--black);
     margin-bottom: 10px;
 }
 
@@ -773,7 +774,7 @@ footer {
     .hamburger.is-active .hamburger-inner,
     .hamburger.is-active .hamburger-inner::before,
     .hamburger.is-active .hamburger-inner::after {
-        background-color: var(--text-color);
+        background-color: var(--black);
     }
 
     .main-nav {
@@ -866,7 +867,7 @@ footer {
     }
 
     .mobile-nav-content ul li a {
-        color: var(--text-color);
+        color: var(--black);
         text-decoration: none;
         font-size: 1.1rem;
         display: block;
@@ -904,7 +905,7 @@ footer {
     background: none;
     border: none;
     cursor: pointer;
-    color: var(--text-color);
+    color: var(--black);
     z-index: 10;
     transition: transform 0.3s ease;
 }
